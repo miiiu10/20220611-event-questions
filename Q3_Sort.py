@@ -33,7 +33,8 @@ def sort(array):
     #　先頭の値が最も小さい場合の処理
     if not under_pivot:
         return [array[0]] + sort(array[1:])
-
+    
+    # それぞれのグループで、同様の処理を再帰的に繰り返す
     return sort(under_pivot) + sort(over_pivot)
 
     # ここまで記述
